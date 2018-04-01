@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_MyLayout</title>
+    @*El RenderSection se usa para usar scripts especificos en vistas especificas solo llamando el nombre
+    del render selection en la vista deseada en este caso "scripts"*@
+    @RenderSection("scripts", required:false)
+</head>
+<body>
+    <h1>Este Es un nuevo layout</h1>
+    <div> 
+       @*Aqui es donde se renderiza la vista que se esta ejecutando con renderbody*@
+        @RenderBody()
+    </div>
+</body>
+</html>

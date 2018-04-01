@@ -1,0 +1,17 @@
+﻿
+@{
+    //el ~/ Señala el principio de la carpeta del proyecto
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+
+<div>
+    <h2>@Model.WelcomeMessage</h2>
+    <h3>@Model.FooterMessage</h3>
+</div>
+@*Aqui se llama el RenderSelection creado en el layout para invocar scripts especificos en las vistas que queremos.*@
+@section scripts{
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+}
+
